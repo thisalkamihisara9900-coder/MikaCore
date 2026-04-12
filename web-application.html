@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Application Development | Mikacore Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html#home" class="brand-logo">
+        <svg class="logo-svg" width="36" height="36" viewBox="0 0 100 100" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF9A44" />
+              <stop offset="100%" stop-color="#FF5A1F" />
+            </linearGradient>
+            <linearGradient id="logoRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF5A1F" />
+              <stop offset="100%" stop-color="#FF2A54" />
+            </linearGradient>
+          </defs>
+          <path d="M 65 10 L 95 50 L 65 90 L 35 50 Z" stroke="url(#logoRedGrad)" stroke-width="10"
+            stroke-linejoin="miter" />
+          <path d="M 35 10 L 65 50 L 35 90 L 5 50 Z" stroke="url(#logoOrangeGrad)" stroke-width="10"
+            stroke-linejoin="miter" />
+          <path d="M 45 76.6 L 65 90 L 75.3 76.2" stroke="url(#logoRedGrad)" stroke-width="10" stroke-linejoin="miter"
+            stroke-linecap="square" />
+        </svg>
+        <span class="brand-text"><span class="brand-mika">Mika</span><span class="brand-core">core</span><span
+            class="brand-dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#service" class="nav-link active">Service</a></li>
+          <li><a href="index.html#solutions" class="nav-link">About Us</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="index.html#contact" class="btn btn-primary">Schedule Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Service Hero -->
+  <section class="service-hero">
+    <div class="service-hero-glow"></div>
+    <div class="container sh-container">
+      <div class="sh-content reveal-up">
+        <div class="breadcrumb">
+          <a href="index.html#home"><i class="fas fa-home"></i> Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="index.html#service">Services</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Web App</span>
+        </div>
+        <h1 class="sh-title">Enterprise <span>Web Application</span> Development</h1>
+        <p class="sh-desc">We engineer scalable, high-performance web ecosystems and custom
+          Shopify solutions designed to automate complex workflows and drive global business expansion.</p>
+        <div class="sh-actions">
+          <a href="index.html#contact" class="btn btn-primary nav-get-started">Start a Project <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="sh-visual reveal-up delay-1">
+        <div class="sh-abstract-card">
+          <i class="fas fa-laptop-code sh-icon"
+            style="font-family: 'Font Awesome 6 Free'; font-weight: 900;">&#xf5fc;</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Features -->
+  <section class="service-features section">
+    <div class="container container-large">
+      <div class="section-heading reveal-up">
+        <h2 class="subtitle">Capabilities</h2>
+        <h3 class="title text-white">Full-Stack Web Engineering</h3>
+      </div>
+      <div class="sh-grid">
+        <div class="sh-feature-card reveal-up">
+          <div class="sh-fc-icon"><i class="fas fa-layer-group"></i></div>
+          <h4>SaaS Development</h4>
+          <p>Architecting robust Software-as-a-Service platforms capable of handling massive multi-tenant loads.</p>
+        </div>
+        <div class="sh-feature-card reveal-up delay-1">
+          <div class="sh-fc-icon"><i class="fas fa-server"></i></div>
+          <h4>API Development</h4>
+          <p>Designing secure, modern RESTful and GraphQL APIs for seamless third-party integrations.</p>
+        </div>
+        <div class="sh-feature-card reveal-up delay-2">
+          <div class="sh-fc-icon"><i class="fas fa-code-branch"></i></div>
+          <h4>Cloud-Native Architecture</h4>
+          <p>Deploying highly available web solutions using AWS, Azure, and modern containerization strategies.</p>
+        </div>
+        <div class="sh-feature-card reveal-up">
+          <div class="sh-fc-icon"><i class="fas fa-paint-brush"></i></div>
+          <h4>Frontend Engineering</h4>
+          <p>Creating lightning-fast and beautifully responsive single-page applications using React, Vue, and Angular.
+          </p>
+        </div>
+        <div class="sh-feature-card reveal-up delay-1">
+          <div class="sh-fc-icon"><i class="fas fa-database"></i></div>
+          <h4>Database Architecture</h4>
+          <p>Scalable and optimized datastores using PostgreSQL, MongoDB, and Redis caching layers.</p>
+        </div>
+        <div class="sh-feature-card reveal-up delay-2">
+          <div class="sh-fc-icon"><i class="fas fa-sync-alt"></i></div>
+          <h4>Legacy Modernization</h4>
+          <p>Refactoring and migrating outdated web applications to modern frameworks without downtime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html#home" class="brand-logo">
+            <svg class="logo-svg" width="36" height="36" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoOrangeGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FF9A44" />
+                  <stop offset="100%" stop-color="#FF5A1F" />
+                </linearGradient>
+                <linearGradient id="logoRedGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FF5A1F" />
+                  <stop offset="100%" stop-color="#FF2A54" />
+                </linearGradient>
+              </defs>
+              <path d="M 65 10 L 95 50 L 65 90 L 35 50 Z" stroke="url(#logoRedGradFooter)" stroke-width="10"
+                stroke-linejoin="miter" />
+              <path d="M 35 10 L 65 50 L 35 90 L 5 50 Z" stroke="url(#logoOrangeGradFooter)" stroke-width="10"
+                stroke-linejoin="miter" />
+              <path d="M 45 76.6 L 65 90 L 75.3 76.2" stroke="url(#logoRedGradFooter)" stroke-width="10"
+                stroke-linejoin="miter" stroke-linecap="square" />
+            </svg>
+            <span class="brand-text text-white"><span class="brand-mika">Mika</span><span
+                class="brand-core">core</span><span class="brand-dot">.</span></span>
+          </a>
+          <p>Engineering premium software solutions for modern enterprises.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="web-application.html">Web Application</a></li>
+            <li><a href="mobile-app.html">Mobile Solutions</a></li>
+            <li><a href="qa-support.html">QA Testing</a></li>
+            <li><a href="#">Cloud Migration</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Client Success</a></li>
+            <li><a href="#">Newsroom</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Connect</h4>
+          <div class="social-pills">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; <span id="currentYear"></span> Mikacore Systems, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

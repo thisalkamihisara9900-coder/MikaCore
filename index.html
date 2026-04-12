@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mikacore - Enterprise Software Solutions, Cloud Engineering, and Digital Transformation.">
+  <title>Mikacore | Enterprise Software Solutions</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Poppins for a premium tech feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lexend:wght@200;700&family=Quicksand:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+
+<body>
+
+  <!-- Professional Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <svg class="logo-svg" width="40" height="40" viewBox="0 0 100 100" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF9A44" />
+              <stop offset="100%" stop-color="#FF5A1F" />
+            </linearGradient>
+            <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF5A1F" />
+              <stop offset="100%" stop-color="#FF2A54" />
+            </linearGradient>
+          </defs>
+          <!-- Interlocking Diamonds matching image -->
+          <path d="M 35 15 L 65 50 L 35 85 L 5 50 Z" stroke="url(#logoGrad)" stroke-width="10" stroke-linejoin="round" />
+          <path d="M 65 15 L 95 50 L 65 85 L 35 50 Z" stroke="url(#logoGrad2)" stroke-width="10" stroke-linejoin="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-mika">Mika</span><span class="brand-core">core</span><span class="brand-dot">.</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#service" class="nav-link">Service</a></li>
+          <li><a href="#solutions" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary nav-get-started">
+            Get Started <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Premium Dark Hero Section -->
+    <section id="home" class="hero" style="position: relative;">
+      <div id="tsparticles" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+      <div class="container hero-container" style="position: relative; z-index: 1;">
+        <div class="hero-content reveal-up">
+          <div class="hero-badge">Enterprise Digital Solutions</div>
+          <h1>Precision Web, Mobile, and QA <span>Engineering</span>.</h1>
+          <p>We deliver scalable web and mobile applications, backed by rigorous QA testing to ensure seamless
+            performance and business growth
+            .</p>
+          <div class="hero-cta">
+            <a href="#service" class="btn btn-primary btn-lg">Explore Our Services</a>
+            <a href="#company" class="btn btn-outline-light btn-lg">Who We Are</a>
+          </div>
+        </div>
+        <!-- Abstract UI/Tech Graphic Representation -->
+        <div class="hero-visual reveal-up delay-2">
+          <div class="glass-card main-card dashboard-card">
+            <div class="card-header" style="justify-content: space-between;">
+              <div style="display: flex; gap: 6px;">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div style="font-size: 0.75rem; color: rgba(255,255,255,0.4); font-family: monospace;">
+                pipeline_status.console</div>
+            </div>
+            <div class="card-body">
+              <div class="dashboard-metric"
+                style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 8px; margin-bottom: 1rem;">
+                <div class="metric-icon" style="color: #27c93f; font-size: 1.5rem;"><i class="fas fa-check-circle"></i>
+                </div>
+                <div class="metric-info" style="flex: 1; display: flex; flex-direction: column;">
+                  <span class="metric-label" style="font-size: 0.8rem; color: rgba(255,255,255,0.6);">QA
+                    Automation</span>
+                  <strong class="metric-value" style="font-size: 1.1rem; color: #fff;">1,240 Tests Passed</strong>
+                </div>
+                <div class="metric-status"
+                  style="background: rgba(39,201,63,0.1); color: #27c93f; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.7rem; font-weight: 700;">
+                  PASSED</div>
+              </div>
+
+              <div class="dashboard-metric"
+                style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 8px; margin-bottom: 1.5rem;">
+                <div class="metric-icon" style="color: var(--c-orange); font-size: 1.5rem;"><i
+                    class="fas fa-rocket"></i>
+                </div>
+                <div class="metric-info" style="flex: 1; display: flex; flex-direction: column;">
+                  <span class="metric-label" style="font-size: 0.8rem; color: rgba(255,255,255,0.6);">Mobile
+                    Performance</span>
+                  <strong class="metric-value" style="font-size: 1.1rem; color: #fff;">99.8% Crash-Free</strong>
+                </div>
+                <div class="metric-status"
+                  style="background: rgba(255, 90, 31, 0.15); color: var(--c-orange); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.7rem; font-weight: 700;">
+                  STABLE</div>
+              </div>
+
+              <div style="margin-top: 1rem;">
+                <div
+                  style="display: flex; justify-content: space-between; font-size: 0.75rem; font-family: monospace; color: rgba(255,255,255,0.6); margin-bottom: 0.6rem;">
+                  <span>Deploying v2.4.0 to Prod...</span>
+                  <span style="color: var(--c-orange);">85%</span>
+                </div>
+                <div
+                  style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                  <div
+                    style="width: 85%; height: 100%; background: linear-gradient(90deg, var(--c-orange), #FF2A54); border-radius: 4px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Ticker -->
+      <div class="partner-band">
+        <div class="container text-center">
+          <p class="band-title">TRUSTED BY INNOVATIVE TEAMS WORLDWIDE</p>
+          <div class="ticker-wrap">
+            <div class="ticker">
+              <!-- SVG placeholders for professional tech stack icons -->
+              <i class="fab fa-aws"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-node-js"></i>
+              <i class="fab fa-docker"></i>
+              <i class="fab fa-python"></i>
+              <i class="fab fa-microsoft"></i>
+              <i class="fab fa-aws"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-node-js"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section (Redesigned with specific detailed lists) -->
+    <section id="service" class="section expertise-section">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <h2 class="subtitle">Our Services</h2>
+          <h3 class="title">Engineering high-performance digital solutions with precision QA.</h3>
+        </div>
+
+        <div class="grid-3 service-grid-tall">
+          <!-- QA Support Card -->
+          <div class="feature-card service-card-detailed reveal-up">
+            <div class="sc-top-cutout"><span class="sc-number">01.</span></div>
+            <div class="fc-icon orange-bg"><i class="fas fa-vial"></i></div>
+            <h4>Quality Assurance</h4>
+            <p class="sc-desc">Comprehensive test automation and manual QA strategies tailored to ensure flawless
+              software delivery.</p>
+
+            <div class="sc-inner-box">
+              <ul class="service-list">
+                <li><i class="fas fa-check"></i> Manual & Automated Testing</li>
+                <li><i class="fas fa-check"></i> Functional & Regression Testing</li>
+                <li><i class="fas fa-check"></i> Performance & Load Testing</li>
+              </ul>
+            </div>
+
+            <div class="sc-bottom-tab">
+              <a href="qa-support.html" class="sc-more-link">More Details <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Web Application Card -->
+          <div class="feature-card service-card-detailed reveal-up delay-1">
+            <div class="sc-top-cutout"><span class="sc-number">02.</span></div>
+            <div class="fc-icon orange-bg"><i class="fas fa-laptop-code"></i></div>
+            <h4>Web Application</h4>
+            <p class="sc-desc">We build secure, scalable, and high-performance web applications tailored for global
+              businesses.</p>
+
+            <div class="sc-inner-box">
+              <ul class="service-list">
+                <li><i class="fas fa-check"></i> Business-Focused Web Development</li>
+                <li><i class="fas fa-check"></i> Scalable SaaS & Enterprise Solutions</li>
+                <li><i class="fas fa-check"></i> Secure API & Third-Party Integration</li>
+              </ul>
+            </div>
+
+            <div class="sc-bottom-tab">
+              <a href="web-application.html" class="sc-more-link">More Details <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Mobile App Development Card -->
+          <div class="feature-card service-card-detailed reveal-up delay-2">
+            <div class="sc-top-cutout"><span class="sc-number">03.</span></div>
+            <div class="fc-icon orange-bg"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Mobile App Development</h4>
+            <p class="sc-desc">User-friendly, high-performance mobile applications built to support business growth and
+              engagement.</p>
+
+            <div class="sc-inner-box">
+              <ul class="service-list">
+                <li><i class="fas fa-check"></i> iOS & Android App Development</li>
+                <li><i class="fas fa-check"></i> Cross-Platform Solutions</li>
+                <li><i class="fas fa-check"></i> App Maintenance & Support</li>
+              </ul>
+            </div>
+
+            <div class="sc-bottom-tab">
+              <a href="mobile-app.html" class="sc-more-link">More Details <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics/Value Proposition Section -->
+    <section id="solutions" class="section split-section bg-gray">
+      <div class="container split-container">
+        <div class="split-image reveal-up">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+            alt="Data Analytics Dashboard">
+          <div class="floating-badge">
+            <i class="fas fa-chart-line orange-text"></i>
+            <div>
+              <strong>99.99%</strong>
+              <span>System Uptime</span>
+            </div>
+          </div>
+        </div>
+        <div class="split-content reveal-up delay-1">
+          <h2 class="subtitle">About Us</h2>
+          <h3 class="title">Powering Businesses with Reliable Software Solutions.</h3>
+          <p>We provide professional QA support, web application development, and mobile app development, helping
+            businesses build secure, scalable, and high-performance digital products.</p>
+
+          <ul class="professional-list">
+            <li>
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Secured by Design</strong>
+                <span>We implement enterprise-grade security protocols from day one.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check"></i>
+              <div>
+                <strong>Agile & Transparent</strong>
+                <span>Continuous delivery with total visibility into our dev processes.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section id="company" class="section stats-section text-center">
+      <div class="container">
+        <div class="grid-4 stats-grid">
+          <div class="stat-item reveal-up">
+            <span class="stat-number">50<span class="orange-text">+</span></span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-item reveal-up delay-1">
+            <span class="stat-number">20<span class="orange-text">+</span></span>
+            <span class="stat-label">Enterprise Clients</span>
+          </div>
+          <div class="stat-item reveal-up delay-2">
+            <span class="stat-number">02<span class="orange-text">+</span></span>
+            <span class="stat-label">Combined Years Experience</span>
+          </div>
+          <div class="stat-item reveal-up delay-3">
+            <span class="stat-number">24<span class="orange-text">/7</span></span>
+            <span class="stat-label">Dedicated Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Contact Form -->
+    <section id="contact" class="section contact-section dark-contact">
+      <div class="container container-large">
+        <div class="contact-layout reveal-up delay-1">
+
+          <!-- Left Side: Contact Info -->
+          <div class="contact-info-left">
+            <h5 class="ci-badge">[ CONTACT INFO ]</h5>
+            <h2 class="ci-title">Let’s Build Your Digital Future Together !</h2>
+
+            <div class="ci-boxes">
+              <!-- Box 1: Email -->
+              <div class="ci-box">
+                <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                <div class="ci-text">
+                  <h4>Email us</h4>
+                  <p>
+                    <a href="mailto:info@mikacore.com" class="ci-link">info@mikacore.com</a><br>
+                    <!-- <a href="mailto:support@mikacore.com" class="ci-link">support@mikacore.com</a> -->
+                  </p>
+                </div>
+              </div>
+
+              <!-- Box 2: Call -->
+              <div class="ci-box">
+                <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="ci-text">
+                  <h4>Call us</h4>
+                  <p>
+                    <a href="tel:+94702743059" class="ci-link">+94 70 274 3059</a><br>
+                    <a href="tel:+94707477437" class="ci-link">+94 76 847 7437</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Contact Form -->
+          <div class="contact-form-card">
+            <form id="proContactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Work Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" id="companyName" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea id="projectDetails" rows="4" placeholder="Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full ci-btn">Send Now</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <svg class="logo-svg" width="36" height="36" viewBox="0 0 100 100" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FF9A44" />
+                  <stop offset="100%" stop-color="#FF5A1F" />
+                </linearGradient>
+                <linearGradient id="logoGrad2Footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FF5A1F" />
+                  <stop offset="100%" stop-color="#FF2A54" />
+                </linearGradient>
+              </defs>
+              <path d="M 35 15 L 65 50 L 35 85 L 5 50 Z" stroke="url(#logoGradFooter)" stroke-width="10" stroke-linejoin="round" />
+              <path d="M 65 15 L 95 50 L 65 85 L 35 50 Z" stroke="url(#logoGrad2Footer)" stroke-width="10" stroke-linejoin="round" />
+            </svg>
+            <span class="brand-text text-white">
+              <span class="brand-mika">Mika</span><span class="brand-core">core</span><span class="brand-dot">.</span>
+            </span>
+          </a>
+          <p>Engineering premium software solutions for modern enterprises.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Capabilities</h4>
+          <ul>
+            <li>Cloud Migration</li>
+            <li>Custom Software</li>
+            <li>Data Analytics</li>
+            <li>UI/UX Systems</li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Company</h4>
+          <ul>
+            <li>Leadership</li>
+            <li>Careers</li>
+            <li>Client Success</li>
+            <li>Newsroom</li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Connect</h4>
+          <div class="social-pills">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; <span id="currentYear"></span> Mikacore Systems, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
