@@ -1170,15 +1170,15 @@ h6 {
     position: absolute;
     bottom: -1rem;
     left: -1rem;
-    /* Premium Light Glass */
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    /* Ultra-Transparent Frosted Glass */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px) saturate(160%);
+    -webkit-backdrop-filter: blur(25px) saturate(160%);
     padding: 1.25rem 2.25rem;
     border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-left: 4px solid var(--c-orange);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-left: 5px solid var(--c-orange);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     z-index: 10;
     display: flex;
     flex-direction: column;
