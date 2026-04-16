@@ -1141,47 +1141,45 @@ h6 {
     position: absolute;
     bottom: -1rem;
     left: -2rem;
-    background: rgba(255, 255, 255, 0.75); /* Light Glass */
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 1.5rem;
-    border-radius: 24px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 2rem 1.75rem 1.5rem;
+    border-radius: 28px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
     z-index: 6;
-    overflow: hidden;
 }
 
 .founder-info-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--c-orange), #FF2A54);
+    display: none; /* Removed the top line as requested */
 }
 
 .founder-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--c-orange);
-    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    color: #27c93f;
+    background: rgba(39, 201, 63, 0.1);
+    padding: 4px 10px;
+    border-radius: 100px;
 }
 
 .founder-badge::before {
     content: '';
-    width: 8px;
-    height: 8px;
-    background: #27c93f; /* Status Green */
+    width: 6px;
+    height: 6px;
+    background: #27c93f;
     border-radius: 50%;
-    box-shadow: 0 0 10px #27c93f;
+    box-shadow: 0 0 8px #27c93f;
     animation: status-pulse 2s infinite;
 }
 
@@ -1768,20 +1766,21 @@ h6 {
         position: relative;
         bottom: auto;
         right: auto;
-        margin-top: -1.5rem;
-        margin-left: 1.5rem;
-        width: fit-content;
+        margin: -4rem auto 0; /* Pull up onto image, center horizontally */
+        width: calc(100% - 2rem);
+        max-width: 300px;
+        z-index: 11;
     }
 
     .founder-info-card {
         position: relative;
         left: 0;
         bottom: 0;
-        margin-top: -3rem;
-        max-width: 100%;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        margin: 1.5rem auto 0; /* Add gap between the two badges */
+        max-width: calc(100% - 2rem);
+        width: 320px;
+        z-index: 10;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
     }
 
     .founder-subtext {
