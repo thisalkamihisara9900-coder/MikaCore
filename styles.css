@@ -1160,86 +1160,90 @@ h6 {
     right: 1rem;
 }
 
-.founder-frame {
-    position: relative;
+/* ================= Modern Classic Gallery Frame ================= */
+.gallery-frame {
+    background: var(--c-white);
+    padding: 1.5rem;
     border-radius: var(--radius-md);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
     z-index: 5;
+    transition: transform 0.4s ease;
 }
 
-.founder-info-card {
-    position: absolute;
-    bottom: -2rem;
-    right: -2rem; /* Moved to right for 'author' feel */
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 2.5rem 2rem 1.5rem;
-    border-radius: 32px;
-    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.15);
-    max-width: 340px;
-    z-index: 6;
+.gallery-frame:hover {
+    transform: translateY(-8px);
 }
 
-.founder-info-card::after {
-    content: '“';
-    position: absolute;
-    top: -1.5rem;
-    left: 2rem;
-    font-size: 6rem;
-    color: var(--c-orange);
-    opacity: 0.15;
-    font-family: serif;
+.split-image {
+    position: relative;
+    border-radius: 8px; /* Slightly sharper for 'classic' feel */
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f8f9fa;
 }
 
-.founder-badge {
-    position: absolute;
-    top: 1.25rem;
-    right: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.6rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: #27c93f;
-    background: rgba(39, 201, 63, 0.1);
-    padding: 4px 12px;
-    border-radius: 100px;
+.split-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s var(--ease-out);
 }
 
-.founder-meta-box {
-    margin-top: 1.5rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid rgba(0,0,0,0.05);
+.founder-identity {
+    margin-top: 2rem;
+    text-align: center;
 }
 
 .fm-name {
-    display: block;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: var(--c-black);
-    margin-bottom: 2px;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.01em;
 }
 
 .fm-title {
-    display: block;
-    font-size: 0.75rem;
-    color: var(--c-orange);
+    font-size: 0.85rem;
     font-weight: 700;
+    color: var(--c-orange);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
-.founder-badge::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: #27c93f;
-    border-radius: 50%;
-    box-shadow: 0 0 8px #27c93f;
-    animation: status-pulse 2s infinite;
+.signature-line {
+    width: 40px;
+    height: 3px;
+    background: var(--c-orange);
+    margin: 1.25rem auto;
+    border-radius: 2px;
+}
+
+.fm-quote {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* ================= Badge Enhancements ================= */
+.about-badge {
+    bottom: -1.5rem;
+    right: -1rem;
+}
+
+.badge-text strong {
+    display: block;
+    color: var(--c-black);
+}
+
+.badge-text span {
+    font-size: 0.75rem;
+    color: var(--c-text-muted);
 }
 
 @keyframes status-pulse {
