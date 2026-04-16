@@ -21,7 +21,7 @@
 
     /* Typography */
     --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-    --font-logo: 'Poppins', sans-serif;
+    --font-logo: 'Outfit', sans-serif;
 
 
     /* Elevation / Shadows */
@@ -279,8 +279,9 @@ h6 {
     font-weight: 700;
     font-size: 2.2rem;
     color: var(--c-white);
-    font-family: 'Comfortaa', cursive;
+    font-family: var(--font-logo);
     letter-spacing: -0.04em;
+    text-transform: capitalize;
 }
 
 .navbar.scrolled .brand-mika {
@@ -288,12 +289,13 @@ h6 {
 }
 
 .brand-core {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 200;
+    font-family: var(--font-logo);
+    font-weight: 300;
     font-size: 2.2rem;
     color: var(--c-white);
     letter-spacing: -0.02em;
-    margin-left: -2px;
+    margin-left: -1px;
+    opacity: 0.9;
 }
 
 .navbar.scrolled .brand-core {
