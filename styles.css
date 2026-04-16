@@ -1117,31 +1117,10 @@ h6 {
     z-index: 5;
 }
 
-/* Precision Corner Brackets */
-.modern-classic-frame::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    width: 40px;
-    height: 40px;
-    border-top: 2px solid var(--c-orange);
-    border-left: 2px solid var(--c-orange);
-    z-index: 5;
-    transition: all 0.4s ease;
-}
-
+/* Removed brackets as requested */
+.modern-classic-frame::before,
 .modern-classic-frame::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    right: -15px;
-    width: 40px;
-    height: 40px;
-    border-bottom: 2px solid var(--c-orange);
-    border-right: 2px solid var(--c-orange);
-    z-index: 5;
-    transition: all 0.4s ease;
+    display: none;
 }
 
 .modern-classic-frame:hover::before {
@@ -1182,20 +1161,18 @@ h6 {
     position: absolute;
     bottom: -1rem;
     left: -1rem;
-    background: rgba(10, 11, 16, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* Light Glass */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 1.25rem 2rem;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.75rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-left: 4px solid var(--c-orange);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     z-index: 10;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    animation: cardFloat 5s ease-in-out infinite;
-    overflow: hidden;
+    gap: 2px;
 }
 
 /* Modern Shimmer/Sweep Effect */
@@ -1231,37 +1208,29 @@ h6 {
 .id-name {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: var(--c-white);
-    font-size: 1.25rem;
+    gap: 8px;
+    color: var(--c-black);
+    font-size: 1.1rem;
     font-weight: 800;
-    letter-spacing: -0.01em;
 }
 
 .id-name::after {
     content: '';
     width: 6px;
     height: 6px;
-    background: #00f3ff; /* Tech Cyan Status */
+    background: #27c93f; /* Lush Green */
     border-radius: 50%;
-    box-shadow: 0 0 12px #00f3ff;
+    box-shadow: 0 0 10px #27c93f;
     display: inline-block;
-    animation: heartBeat 2s infinite;
-}
-
-@keyframes heartBeat {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.5); opacity: 0.5; }
-    100% { transform: scale(1); opacity: 1; }
 }
 
 .id-title {
     display: block;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.8rem;
+    color: var(--c-orange);
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
 }
 
 /* ================= Mobile Tweaks ================= */
