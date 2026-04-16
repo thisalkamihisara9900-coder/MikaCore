@@ -1013,35 +1013,57 @@ h6 {
 
 .floating-badge {
     position: absolute;
-    bottom: 2rem;
-    right: -2rem;
-    background: var(--c-white);
-    padding: 1.25rem;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.25rem;
     z-index: 10;
-    animation: float 4s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 .about-badge {
-    bottom: 1rem;
-    right: -1rem;
-    border-left: 4px solid var(--c-orange);
+    bottom: 2rem;
+    right: -2rem;
 }
 
 .badge-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--c-orange-light);
-    color: var(--c-orange);
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--c-orange), #FF2A54);
+    color: var(--c-white);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    font-size: 1.2rem;
+    border-radius: 14px;
+    font-size: 1.25rem;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(255, 90, 31, 0.2);
+}
+
+.badge-icon::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 17px;
+    border: 1.5px solid var(--c-orange);
+    opacity: 0.5;
+    animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(0.95); opacity: 1; }
+    100% { transform: scale(1.1); opacity: 0; }
+}
+
+.floating-badge strong {
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
 }
 
 /* ================= Leadership Team Grid ================= */
@@ -1119,25 +1141,54 @@ h6 {
     position: absolute;
     bottom: -1rem;
     left: -2rem;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(10, 11, 16, 0.85); /* Dark Glass */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
-    border-radius: var(--radius-md);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    max-width: 280px;
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    max-width: 300px;
     z-index: 6;
-    border-left: 5px solid var(--c-orange);
+    overflow: hidden;
+}
+
+.founder-info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--c-orange), #FF2A54);
 }
 
 .founder-badge {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 0.7rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     color: var(--c-orange);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.founder-badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #27c93f; /* Status Green */
+    border-radius: 50%;
+    box-shadow: 0 0 10px #27c93f;
+    animation: status-pulse 2s infinite;
+}
+
+@keyframes status-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
 }
 
 .founder-caption {
