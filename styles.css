@@ -408,6 +408,18 @@ h6 {
     letter-spacing: 0.05em;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .hero-content h1 {
     color: var(--c-white);
     font-size: 3.5rem;
@@ -1095,155 +1107,41 @@ h6 {
     letter-spacing: -0.01em;
 }
 
-/* ================= Leadership Team Grid ================= */
-.leadership-grid {
-    display: flex;
-    gap: 1.5rem;
+/* ================= Simple Minimalist Frame ================= */
+.simple-framed-image {
     position: relative;
-    z-index: 5;
-}
-
-.member-card {
-    flex: 1;
-    position: relative;
-    transition: transform 0.4s var(--ease-out);
-}
-
-.member-card:hover {
-    transform: translateY(-5px);
-}
-
-.tech-lead-card {
-    margin-top: 2rem; /* Asymmetrical look for premium feel */
-}
-
-.member-image-box {
-    position: relative;
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    aspect-ratio: 3/4;
-}
-
-.member-image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.member-badge-pill {
-    position: absolute;
-    background: linear-gradient(135deg, var(--c-orange), #FF2A54);
-    color: var(--c-white);
-    padding: 0.5rem 1.25rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    box-shadow: 0 10px 20px rgba(255, 42, 84, 0.3);
-    z-index: 10;
-}
-
-.member-badge-pill.top-right {
-    top: 1rem;
-    right: 1rem;
-}
-
-.member-badge-pill.bottom-left {
-    bottom: 1rem;
-    left: 1rem;
-}
-
-.member-badge-pill.bottom-right {
-    bottom: 1rem;
-    right: 1rem;
-}
-
-/* ================= Modern Classic Gallery Frame ================= */
-.gallery-frame {
-    background: var(--c-white);
+    display: inline-block;
     padding: 1.5rem;
-    border-radius: var(--radius-md);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    position: relative;
-    z-index: 5;
-    transition: transform 0.4s ease;
 }
 
-.gallery-frame:hover {
-    transform: translateY(-8px);
+.simple-framed-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 1.5rem);
+    border: 2px solid var(--c-orange);
+    border-radius: var(--radius-md);
+    z-index: 1;
 }
 
 .split-image {
     position: relative;
-    border-radius: 8px; /* Slightly sharper for 'classic' feel */
+    border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #f8f9fa;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    background: var(--c-black);
+    transform: translate(1.5rem, 1.5rem); /* Offset from the border */
 }
 
 .split-image img {
     display: block;
     width: 100%;
     height: auto;
-    transition: transform 0.8s var(--ease-out);
-}
-
-.founder-identity {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.fm-name {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: var(--c-black);
-    margin-bottom: 0.25rem;
-    letter-spacing: -0.01em;
-}
-
-.fm-title {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--c-orange);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.signature-line {
-    width: 40px;
-    height: 3px;
-    background: var(--c-orange);
-    margin: 1.25rem auto;
-    border-radius: 2px;
-}
-
-.fm-quote {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--c-text-muted);
-    font-style: italic;
-    line-height: 1.5;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-/* ================= Badge Enhancements ================= */
-.about-badge {
-    bottom: -1.5rem;
-    right: -1rem;
-}
-
-.badge-text strong {
-    display: block;
-    color: var(--c-black);
-}
-
-.badge-text span {
-    font-size: 0.75rem;
-    color: var(--c-text-muted);
+    border-radius: inherit;
+    transition: transform 0.6s var(--ease-out);
 }
 
 @keyframes status-pulse {
@@ -1816,39 +1714,18 @@ h6 {
 
     /* Mobile specific split-image adjustments */
     .split-image-wrapper {
-        padding-right: 0;
-        padding-bottom: 0;
-        margin-bottom: 2rem;
+        padding: 0;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: center;
     }
 
-    .image-deco-dots {
-        display: none;
+    .simple-framed-image {
+        padding: 1rem;
     }
 
-    .floating-badge {
-        position: relative;
-        bottom: auto;
-        right: auto;
-        margin: -4rem auto 0; /* Pull up onto image, center horizontally */
-        width: calc(100% - 2rem);
-        max-width: 300px;
-        z-index: 11;
-    }
-
-    .founder-info-card {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        margin: 1.5rem auto 0; /* Add gap between the two badges */
-        max-width: calc(100% - 2rem);
-        width: 320px;
-        z-index: 10;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-    }
-
-    .founder-subtext {
-        text-align: left;
-        margin-top: 2rem;
+    .split-image {
+        transform: translate(1rem, 1rem);
     }
 }
 
