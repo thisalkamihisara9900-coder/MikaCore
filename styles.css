@@ -1240,24 +1240,6 @@ h6 {
     letter-spacing: 0.1em;
 }
 
-.id-name::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: #27c93f; /* Lush Green */
-    border-radius: 50%;
-    box-shadow: 0 0 10px #27c93f;
-    display: inline-block;
-}
-
-.id-title {
-    display: block;
-    color: var(--c-orange);
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
 
 /* ================= Mobile Tweaks ================= */
 @media screen and (max-width: 768px) {
